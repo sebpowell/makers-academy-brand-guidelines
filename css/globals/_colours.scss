@@ -2,6 +2,8 @@
 	@return map-get(map-get($colors, $palette), $tone);
 }
 
+// secondary color palette
+
 $colors: (
 	brand-primary: (
 		base: theme(brand-primary),
@@ -14,20 +16,19 @@ $colors: (
 
 	greyscale: (
 		x-light: #f5f5f5,
-		light: #BDBDBD,
-		medium: #4F4F4F,
-		dark: #2F363A,
+		light: #818F98,
+		medium: #445561,
+		dark: #0F222F,
 	), 
 
-	info: (
-		error: #F86464,
-		base: #ECDF9A,
-		dark: #8C7A1B,
+	ui: (
+		error: #BB4150,
+		success: #46A76D,
+		info: #51A3B1,
 	),
 
 	keyline: (
-		light: #ECECEC,
-		medium: #D5D5D5,
+		light: #E8E8E8,
 		dark: #D9D9D8,
 	)
 );

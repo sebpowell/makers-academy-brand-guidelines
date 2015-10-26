@@ -1,7 +1,11 @@
 @each $palette, $tint in $colors
 	@each $color, $value in $tint
-		.background-#{$palette}-#{$color}
-			background-color: $value !important
+		@if $color == "base"
+			.background-#{$palette}
+				background-color: $value !important
+		@else
+			.background-#{$palette}-#{$color}
+				background-color: $value !important
 
 .background-white
 	background: white !important

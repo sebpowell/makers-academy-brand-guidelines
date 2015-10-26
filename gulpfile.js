@@ -6,7 +6,7 @@ var gulp = require("gulp"),
 		concat = require("gulp-concat");
 
 gulp.task('sass', function () {
-	return sass('css/style.scss', { style: 'compact' })
+	return sass('css/style.sass', { style: 'compact' })
 	.on('error', function (err) {
 		console.error('Error!', err.message);
 	})

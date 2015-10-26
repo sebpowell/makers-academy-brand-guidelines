@@ -16,31 +16,21 @@ footer, header, hgroup, menu, nav, section
 	vertical-align: baseline
 
 html
-	font-family: SabonLTPro-Roman, Times, Georgia, serif
+	font-family: "open-sans"
 	font-size: theme(font-primary)
 	line-height: 1
 	color: colors(greyscale, dark)
 	background-color: map-get($theme, body-background)
-	letter-spacing: -0.01rem
 	min-height: 100%
 	height: 100%
 
 body
-	// For nav on mobile
-	padding-top: 78px
-	+respond-above(device-medium)
-		padding-top: 94px
+	// padding-top: 78px
+	padding-left: 240px
 
 img
 	max-width: 100%
 	// width: 100%
-
-a
-	cursor: pointer
-	text-decoration: none
-	color: inherit
-	&:visited
-		color: inherit
 
 em, i
 	font-style: italic

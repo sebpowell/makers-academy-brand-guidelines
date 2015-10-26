@@ -1,19 +1,21 @@
+$grid: (gutter: sizes(base), columns: 12)
+
 // Are both grid and columns
-@for $i from 1 through map-get($theme, columns)
+@for $i from 1 through map-get($grid, columns)
 	@each $key, $value in $breakpoints
 		.grid-#{$i}-#{$key}
 			+no-bullet
 			+clearfix
 			+respond-above($key)
-				margin-left: -(map-get($theme, gutter))
-				margin-right: -(map-get($theme, gutter))
+				margin-left: -(map-get($grid, gutter))
+				margin-right: -(map-get($grid, gutter))
 
 			@if $i < 1
 				margin-left: 0
 				margin-right: 0
 			> li
 				width: 100%
-				margin-bottom: map-get($theme, gutter)
+				margin-bottom: map-get($grid, gutter)
 				&:last-child
 					margin-bottom: 0
 				&:nth-child(#{$i}n + 1)
@@ -26,19 +28,19 @@
 				+respond-above($key)
 					width: 100% / $i !important
 					float: left
-					padding: 0 map-get($theme, gutter) !important
+					padding: 0 map-get($grid, gutter) !important
 					// &:nth-last-of-type(-n+#{$i})
 					// 	margin-bottom: 0
 
 
 @each $key, $value in $breakpoints
-	@for $i from 1 through map-get($theme, columns)
+	@for $i from 1 through map-get($grid, columns)
 		.columns-#{$i}-#{$key}
 			width: 100%
 			margin-bottom: sizes(double)
 
 			+respond-above($key)
-				width: $i * (100% / map-get($theme, columns))
+				width: $i * (100% / map-get($grid, columns))
 				float: left
 				padding: 0 sizes(base)
 				margin-bottom: 0
@@ -46,7 +48,7 @@
 				// 	margin-bottom: 0
 
 // Generates classes for columns 1 - 12.
-@for $i from 1 through map-get($theme, columns)
+@for $i from 1 through map-get($grid, columns)
 	.columns-#{$i}
 		width: 100%
 		float: left
@@ -54,16 +56,16 @@
 		&:last-child
 			margin-bottom: 0
 		+respond-above(device-small)
-			padding: 0 map-get($theme, gutter)
+			padding: 0 map-get($grid, gutter)
 			margin-bottom: 0
-			width: $i * (100% / map-get($theme, columns))
+			width: $i * (100% / map-get($grid, columns))
 			// Add nth-class helper
 
 // Generates classes for column offsets.
-@for $i from 1 through map-get($theme, columns)
+@for $i from 1 through map-get($grid, columns)
 	.offset-#{$i}
 		+respond-above(device-medium-large)
-			margin-left: $i * (100% / map-get($theme, columns))
+			margin-left: $i * (100% / map-get($grid, columns))
 
 // Start with a row container. Inside the row container, use the columns. The module or component is then place dinside each column.
 // Change ths to /columns-cotainer?
@@ -116,6 +118,13 @@
 			> [class^="column"], > li
 				padding: 0 $var !important
 				// Add mobile
+	
+	.spacing-after-#{$size}
+		+respond-above(device-medium)
+			> li
+				margin-bottom: $var !important
+
+				
 
 
 
