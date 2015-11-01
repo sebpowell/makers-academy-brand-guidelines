@@ -6,6 +6,8 @@
 	display: inherit !important
 	visibility: visible !important
 
+
+
 @each $breakpoint, $value in $breakpoints
 	.hide-above-#{$breakpoint}
 		+respond-above(#{$breakpoint})

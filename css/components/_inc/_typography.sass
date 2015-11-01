@@ -24,11 +24,11 @@ h1, h2, h3, h4, h5, h6
 h1
 	+responsive-text-size(large)
 
-h1, h2
+h1, h2, h3
 	margin-bottom: sizes(base)
 	
-h3, h4, h5, h6
-	margin-bottom: sizes(base)
+h4, h5, h6
+	margin-bottom: sizes(quarter)
 
 a
 	color: colors(brand-primary)
@@ -51,4 +51,12 @@ p
 
 strong
 	font-weight: 600
+
+.unordered-list, .ordered-list
+	padding-left: sizes(base)
+	li
+		margin-bottom: sizes(double-half)
+
+.ordered-list
+	padding-left: sizes(double-half)
 

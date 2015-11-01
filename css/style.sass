@@ -4,10 +4,8 @@
 @import "helpers/helpers"
 @import "components/components"
 
-.unordered-list
-	padding-left: sizes(base)
-	li
-		margin-bottom: sizes(double-half)
+
+
 
 .branding-section
 	padding: 60px 0
@@ -28,9 +26,14 @@
 	border-radius: 3px
 
 
+.docs-container
+	+respond-above(device-medium)
+		padding-left: 240px
+
 .docs-content
 	width: 100%
 	padding: 0 theme(mobile-gutter)
+
 table
 	width: 100%
 	td
@@ -38,6 +41,7 @@ table
 		padding: sizes(base) 0
 		h1, h2, h3, h4, h5, h6, p
 			margin: 0
+			
 	&.bordered
 		tr:not(:last-child)
 			td
