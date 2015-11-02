@@ -1,0 +1,12 @@
+table
+	width: 100%
+	td
+		vertical-align: middle
+		padding: sizes(base) 0
+		h1, h2, h3, h4, h5, h6, p
+			margin: 0
+			
+	&.bordered
+		tr:not(:last-child)
+			td
+				border-bottom: 1px solid colors(keyline, light)

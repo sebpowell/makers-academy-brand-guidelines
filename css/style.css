@@ -1587,14 +1587,9 @@ strong { font-weight: 600; }
 
 .notification { border: 1px solid #E8E8E8; padding: 24px; border-radius: 3px; }
 
-@media (min-width: 780px) { .docs-container { padding-left: 240px; } }
+@media (min-width: 780px) { .docs-container { padding-left: 200px; } }
 
-.docs-content { width: 100%; padding: 0 24px; }
-
-table { width: 100%; }
-table td { vertical-align: middle; padding: 16px 0; }
-table td h1, table td h2, table td h3, table td h4, table td h5, table td h6, table td p { margin: 0; }
-table.bordered tr:not(:last-child) td { border-bottom: 1px solid #E8E8E8; }
+.docs-content { width: 100%; max-width: 1100px; margin: auto; padding: 0 24px; }
 
 h1 { font-family: "futura-pt"; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 400; }
 

@@ -4,13 +4,9 @@
 @import "helpers/helpers"
 @import "components/components"
 
-
-
-
 .branding-section
 	padding: 60px 0
-	
-	
+
 	.branding-section-sub-heading
 		margin-top: 60px
 
@@ -28,27 +24,16 @@
 
 .docs-container
 	+respond-above(device-medium)
-		padding-left: 240px
+		padding-left: 200px
 
 .docs-content
 	width: 100%
+	max-width: 1100px
+	margin: auto
 	padding: 0 theme(mobile-gutter)
 
-table
-	width: 100%
-	td
-		vertical-align: middle
-		padding: sizes(base) 0
-		h1, h2, h3, h4, h5, h6, p
-			margin: 0
-			
-	&.bordered
-		tr:not(:last-child)
-			td
-				border-bottom: 1px solid colors(keyline, light)
 
 h1
-	
 	font-family: "futura-pt"
 	// font-size: 48px
 	text-transform: uppercase
@@ -65,8 +50,6 @@ h1
 
 .swatch-name
 	font-size: 14px
-
-
 
 // $sign-up: (device-medium: 4, device-small: 6, device-x-small: 6);
 // $split-panels: (device-x-small: 12, device-large: 6);
@@ -92,32 +75,3 @@ h1
 // 	}
 // }
 
-// .module-split-panel {
-// 	@include clearfix;
-// 	.module-split-panel-summary, .module-split-panel-points  {
-// 		@include grid-test($split-panels);
-// 		padding: sizes(triple);
-// 		@include respond-above(device-medium) {
-// 			padding: 100px sizes(quad) !important;
-// 		}
-// 	}
-// 	.module-split-panel-points {
-// 		h3 {
-// 			&:before {
-// 				display: inline-block;
-// 				vertical-align: middle;
-// 				margin-right: sizes(quarter);
-// 				content: "";
-// 				background-image: url("../images/dots.png");
-// 				background-size: contain;
-// 				background-repeat: no-repeat;
-// 				width: sizes(base);
-// 				height: sizes(base);
-// 				margin-top: -4px;
-// 			}
-// 		}
-// 		p {
-// 			@include responsive-text-size(small);
-// 		}
-// 	}
-// }
