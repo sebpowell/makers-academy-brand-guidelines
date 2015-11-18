@@ -1,0 +1,13 @@
+@function sizes($value) {
+  @return map-get($sizes, $value);
+}
+
+$sizes: (
+  quarter: 16px / 4,
+  half: 16px / 2,
+  base: 16px,
+  double-half: 16px * 1.5,
+  double: 16px * 2,
+  triple: 16px * 3,
+  quad: 16px * 4,
+);

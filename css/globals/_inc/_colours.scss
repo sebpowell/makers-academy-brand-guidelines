@@ -2,16 +2,13 @@
 	@return map-get(map-get($colors, $palette), $tone);
 }
 
-// secondary color palette
-
 $colors: (
 	brand-primary: (
-		base: theme(brand-primary),
-		dark: hsla(200, 60%, 10%, 1)
+		base: #AC1B26,
 	),
-
+	
 	brand-secondary: (
-		base: theme(brand-secondary),
+		base: #0B2638,
 	),
 
 	greyscale: (

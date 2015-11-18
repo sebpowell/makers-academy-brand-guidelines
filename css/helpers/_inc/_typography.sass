@@ -5,9 +5,9 @@ $font-weights: (100, 200, 300, 400, 500, 600, 700, 800, 900)
 		font-weight: #{$weight} !important
 
 // Generate text size helpers
-@each $item, $size in $text-sizing
+@each $item, $size in $text-sizes
 	.text-#{$item}
-		@include responsive-text-size($item)
+		font-size: #{$size}
 
 $text-alignment: (left, center, right)
 @each $direction in $text-alignment
