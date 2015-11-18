@@ -55,7 +55,7 @@ $grid: (gutter: sizes(base), columns: 12)
 		margin-bottom: sizes(double)
 		&:last-child
 			margin-bottom: 0
-		+respond-above(device-small)
+		+respond-above(device-medium-large)
 			padding: 0 map-get($grid, gutter)
 			margin-bottom: 0
 			width: $i * (100% / map-get($grid, columns))
@@ -72,7 +72,6 @@ $grid: (gutter: sizes(base), columns: 12)
 .row
 	+clearfix
 	position: relative
-
 	&.vertical-align
 		+respond-above(device-medium-large)
 			display: table
@@ -81,8 +80,7 @@ $grid: (gutter: sizes(base), columns: 12)
 				height: 100%
 				display: table-cell
 				vertical-align: middle
-
-
+				
 	+respond-above(device-medium-large)
 		margin-left: -(sizes(base))
 		margin-right: -(sizes(base))

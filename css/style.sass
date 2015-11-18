@@ -4,6 +4,33 @@
 @import "helpers/helpers"
 @import "components/components"
 
+table
+	width: 100%
+
+
+.docs-download
+	+clearfix
+	border-bottom: 1px solid colors(keyline, light)
+	width: 100%
+	padding: sizes(double) 0
+
+.docs-download-button
+	border: 1px solid colors(brand-primary)
+	border-radius: 40px
+	padding: 14px 20px
+	float: right
+	top: sizes(double)
+	right: sizes(double)
+	
+
+
+.table-hierarchy
+	td
+		padding: sizes(double) 0
+		border-bottom: 1px solid colors(keyline, light)
+		h1, h2, h3, h4, h5, h6, p
+			margin-bottom: 0
+
 .branding-section
 	padding: 60px 0
 
@@ -33,12 +60,13 @@
 	padding: 0 theme(mobile-gutter)
 
 
-h1
+h1, h2, h3, h4, h5, h6
 	font-family: "futura-pt"
 	// font-size: 48px
 	text-transform: uppercase
-	letter-spacing: 0.1em
+	letter-spacing: 0.15em
 	font-weight: 400
+	color: colors(brand-primary)
 
 .swatch
 	width: 100%

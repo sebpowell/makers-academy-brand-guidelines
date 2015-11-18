@@ -1,6 +1,5 @@
 <html>
 	<head>
-
 		<!-- Meta Tags !-->
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -14,529 +13,517 @@
 		<title>Makers Academy Brand Guidelines</title>
 
 		<link rel="stylesheet" href="css/style.css">
-
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 		<link rel="apple-touch-icon-precomposed" href="/screen-icon.png">
 
-		<script src="js/vendor/jquery-1.11.3.min.js"></script>
+		<script src="jquery-1.11.3.min.js"></script>
 		<script src="app.js"></script>
 		<!-- Enable HTML5 elements in IE8 !-->
 			<!--[if lt IE 9]>
 				<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 			<![endif]-->
 		<!-- / Enable HTML5 elements in IE8 !-->
+
+		<!-- Typekit !-->
 		<script src="https://use.typekit.net/ttf3mzw.js"></script>
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+		<!-- / Typekit !-->
+		<script>
+			$(document).ready(function() {
+				$("body").scrollspy({
+					target: "#nav",
+					offset: 70
+				});
+				smoothScroll.init();
+			});
+		</script>
 	</head>
-
 	<body>
-
 		<div class="docs-container">
-		<div class="docs-navigation">
-			<ul>
-
-				<li>
-					<a href="">Logo</a>
-					<ul>
-						<li><a href="#variations">Variations</a></li>
-						<li><a href="#colour">Colour</a></li>
-						<li><a href="#wordmark">Wordmark</a></li>
-						<li><a href="#spacing">Spacing</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="#colour-palette">Colours</a>
-					<ul>
-						<li><a href="#variations">Brand Colours</a></li>
-						<li><a href="#colour">Greyscale</a></li>
-						<li><a href="#wordmark">UI</a></li>
-						<li><a href="#spacing">Usage</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="#typography">Typography</a>
-					<ul>
-						<li><a href="#primary-typeface">Primary Typeface</a></li>
-						<li><a href="#secondary-typeface">Secondary Typeface</a></li>
-						<li><a href="#hierarchy">Hierarchy</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="#marketing-assets">Marketing Assets</a>
-					<ul>
-						<li><a href="#masthead">Website Masthead</a></li>
-						<li><a href="#flyer">Flyer</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="#story">Brand Story</a>
-					<ul>
-						<li><a href="#differentiators">Differentiators</a></li>
-						<li><a href="#tone">Tone of Voice</a></li>
-					</ul>
-				</li>
-			</ul>
-		</div>
-
-		<div class="docs-content">
-
-	<!-- Logo !-->
-	<section id="logo" class="branding-section">
-		<h1>Logo</h1>
-
-		<section id="variations" class="branding-sub-section">
-			<h2>Logo Variations</h2>
-			<div style="height: 400px" class="logo-example background-brand-primary text-center margin-bottom-base">
-				<img style="margin-top: 138px" src="images/logo/white/vertical-lockup.png" width="200px">
+			<div id="nav" class="docs-navigation">
+				<ul data-offset-top="120" data-spy="affix">
+					<li>
+						<a data-scroll href="#logo">Logo</a>
+						<ul>
+							<li><a data-scroll href="#configurations">Configurations</a></li>
+							<li><a data-scroll href="#colour">Colour</a></li>
+							<li><a data-scroll href="#wordmark">Wordmark</a></li>
+							<li><a data-scroll href="#spacing">Spacing</a></li>
+						</ul>
+					</li>
+					<li>
+						<a data-scroll href="#colours">Colours</a>
+						<ul>
+							<li><a data-scroll href="#brand-colours">Brand Colours</a></li>
+							<li><a data-scroll href="#greyscale">Greyscale</a></li>
+							<li><a data-scroll href="#ui">UI</a></li>
+							<li><a data-scroll href="#usage">Usage</a></li>
+						</ul>
+					</li>
+					<li>
+						<a data-scroll href="#typography">Typography</a>
+						<ul>
+							<li><a data-scroll href="#primary">Typeface</a></li>
+							<li><a data-scroll href="#hierarchy">Hierarchy</a></li>
+						</ul>
+					</li>
+					<li>
+						<a data-scroll href="#marketing-assets">Marketing Assets</a>
+						<ul>
+							<li><a data-scroll href="#website-masthead">Website Masthead</a></li>
+							<li><a data-scroll href="#flyer">Flyer</a></li>
+							<li><a data-scroll href="#banners">Banners</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#story">Brand Story</a>
+						<ul>
+							<li><a data-scroll href="#differentiators">Differentiators</a></li>
+							<li><a data-scroll href="#tone">Tone of Voice</a></li>
+							<li><a data-scroll href="#boilerplate">Boilerplate</a></li>
+						</ul>
+					</li>
+				</ul>
 			</div>
-			<h4>Vertical Lockup</h4>
-			<p class="text-small"> Use this wherever possible.</p>
-		</section>
 
-		<section class="branding-sub-section">
-			<div class="row">
-				<div class="columns-6">
-					<div style="height: 300px" class="background-brand-primary text-center margin-bottom-base">
-						<img style="margin-top: 132px" src="images/logo/white/horizontal-lockup.png" width="280px">
-					</div>
-					<h4 class="margin-bottom-quarter">Horizontal Lockup</h4>
-					<p class="text-small">Use this if vertical space is limited.</p>
+			<div class="docs-content">
+				<div class="docs-download">
+					<a href="https://www.dropbox.com/sh/9mxslql28y1pqr2/AABgIxtqpi9RudDCv_5m9mPIa?dl=0" target="_blank" class="docs-download-button">Download Assets</a>
 				</div>
-				<div class="columns-6">
-					<div style="height: 300px" class="background-brand-primary text-center margin-bottom-base">
-						<img style="margin-top: 110px" src="images/logo/white/glyph.png" width="150px">
-					</div>
-					<h4>Glyph</h4>
-					<p class="text-small">Use only within UI.</p>
-				</div>
-			</div>
-		</section>
+				<!-- Logo !-->
+				<section id="logo" class="branding-section">
+					<h1>Logo</h1>
 
-		<!-- Colour !-->
-		<section id="colour" class="branding-sub-section">
-			<h2>Colour</h2>
-			<div class="row">
-				<div class="columns-4">
-					<div style="padding: 100px 0" class="border-all background-brand-primary text-center margin-bottom-base">
-						<img src="images/logo/white/vertical-lockup.png" width="140px">
-					</div>
-					<h4>White</h4>
-					<p class="text-small">Our logo is typically overlaid on an image or solid background color. Use the white version in these cases.</p>
-				</div>
-				<div class="columns-4">
-					<div style="padding: 100px 0" class="border-all text-center margin-bottom-base">
-						<img src="images/logo/red/vertical-lockup.png" width="140px">
-					</div>
-					<h4>Red</h4>
-					<p class="text-small">This is our primary brand color. Use on a white background.</p>
-				</div>
-				
-				<div class="columns-4">
-					<div style="padding: 100px 0" class="border-all text-center margin-bottom-base">
-						<img src="images/logo/black/vertical-lockup.png" width="140px">
-					</div>
-					<h4>Black</h4>
-					<p class="text-small">Use when colours are not available.</p>
-				</div>
-			</div>
-		</section>
-		<!-- / Colour !-->
+					<!-- Configurations !-->
+					<section id="configurations" class="branding-sub-section">
+						<h2>Configurations</h2>
+						<div class="row">
+							<div class="columns-4">
+								<div style="height: 300px" class="background-brand-primary text-center margin-bottom-base">
+									<img style="margin-top: 107px" src="images/logo/white/vertical-lockup.png" width="140px">
+								</div>
+								<h4>Vertical Lockup</h4>
+							</div>
+							<div class="columns-4">
+								<div style="height: 300px" class="background-brand-primary text-center margin-bottom-base">
+									<img style="margin-top: 139px" src="images/logo/white/horizontal-lockup.png" width="240px">
+								</div>
+								<h4 class="margin-bottom-quarter">Horizontal Lockup</h4>
+							</div>
+							<div class="columns-4">
+								<div style="height: 300px" class="background-brand-primary text-center margin-bottom-base">
+									<img style="margin-top: 110px" src="images/logo/white/glyph.png" width="150px">
+								</div>
+								<h4>Glyph</h4>
+							</div>
+						</div>
+					</section>
+					<!-- / Configurations !-->
 
-		<!-- Wordmark !-->
-		<section id="wordmark" class="branding-sub-section">
-			<h2>Wordmark</h2>
-			<p class="margin-bottom-double">Makers Academy is two words. Both words should be capitalised</p>
-			<div class="row">
-				<div class="columns-4">
-					<div class="border-all padding-double">
-						<h2>Makers Academy</h2>
-						<p class="text-ui-success">Like this.</p>
-					</div>
-				</div>
-				<div class="columns-4">
-					<div class="border-all padding-double">
-						<h2 class="text-greyscale-light">MakersAcademy</h2>
-						<p class="text-ui-error">Not like this.</p>
-					</div>
-				</div>
-				<div class="columns-4">
-					<div class="border-all padding-double">
-						<h2 class="text-greyscale-light">makers academy</h2>
-						<p class="text-ui-error">Or this.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="branding-sub-section">
-			<h2>Spacing</h2>
-			<p>Always make sure you keep enough space between the logo and surrounding elements.</p>
-			<img style="width: 500px" class="border-all responsive" src="images/logo/spacing.png"> 
-		</section>
-	</section>
-	<!-- Logo !-->
+					<!-- Colour !-->
+					<section id="colour" class="branding-sub-section">
+						<h2>Colour</h2>
+						<div class="row">
+							<div class="columns-4">
+								<div style="padding: 100px 0" class="border-all background-brand-primary text-center margin-bottom-base">
+									<img src="images/logo/white/vertical-lockup.png" width="140px">
+								</div>
+								<h4>White</h4>
+								<p class="text-small">Our logo is typically overlaid on an image or solid background color. Use the white version in these cases.</p>
+							</div>
+							<div class="columns-4">
+								<div style="padding: 100px 0" class="border-all text-center margin-bottom-base">
+									<img src="images/logo/red/vertical-lockup.png" width="140px">
+								</div>
+								<h4>Red</h4>
+								<p class="text-small">This is our primary brand color. Use on a white background.</p>
+							</div>
+							<div class="columns-4">
+								<div style="padding: 100px 0" class="border-all text-center margin-bottom-base">
+									<img src="images/logo/black/vertical-lockup.png" width="140px">
+								</div>
+								<h4>Black</h4>
+								<p class="text-small">Use if colours are not available.</p>
+							</div>
+						</div>
+					</section>
+					<!-- / Colour !-->
 
-	<!-- Colours !-->
-	<section id="colour-palette" class="branding-section">
-		<h1>Colour Palette</h1>
+					<!-- Wordmark !-->
+					<section id="wordmark" class="branding-sub-section">
+						<h2>Wordmark</h2>
+						<p class="margin-bottom-double">Makers Academy is written as two words, capitalised</p>
+						<div class="row">
+							<div class="columns-4">
+								<div class="border-all padding-double">
+									<h2 class="text-capitalize">Makers Academy</h2>
+									<p class="text-ui-success">Like this.</p>
+								</div>
+							</div>
+							<div class="columns-4">
+								<div class="border-all padding-double">
+									<h2 class="text-greyscale-light text-capitalize">MakersAcademy</h2>
+									<p class="text-ui-error">Not like this.</p>
+								</div>
+							</div>
+							<div class="columns-4">
+								<div class="border-all padding-double">
+									<h2 class="text-greyscale-light text-lowercase">makers academy</h2>
+									<p class="text-ui-error">Or this.</p>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- / Wordmark !-->
 
-		<!-- Brand Colours !-->
-		<section class="branding-sub-section">
-			<h2>Brand Colours</h2>
-			<p>These are our primary brand colours, used as the foundation for any branded design.</p>
-			<div class="row">
-				<div class="columns-3">
-					<div class="swatch background-brand-primary"></div>
-					<h4>Red</h4>
-					<p class="text-x-small text-greyscale-medium">
-						<strong>HEX</strong>: #AC1B26
-					</p>
-					<p class="text-small color-greyscale-medium"></p>
-				</div>
-				<div class="columns-3">
-					<div class="swatch background-brand-secondary"></div>
-					<h4>Dark Blue</h4>
-					<p class="text-x-small text-greyscale-medium">
-						<strong>HEX</strong>: #0B2638
-					</p>
-				</div>
-			</div>
-		</section>
-		<!-- / Brand Colours !-->
+					<!-- Spacing !-->
+					<section id="spacing" class="branding-sub-section">
+						<h2>Spacing</h2>
+						<p>As a general rule of thumb, keep at least one glyphs' worth of space between the logo and other elements (but don't sweat it, an approximation is fine).</p>
+						<img style="width: 500px" class="border-all responsive" src="images/logo/spacing.png"> 
+					</section>
+					<!-- / Spacing !-->
+				</section>
+				<!-- Logo !-->
 
-		<!-- Greyscale !-->
-		<section class="branding-sub-section">
-			<h2>Greyscale</h2>
-			<div class="row">
-				<div class="columns-3">
-					<div class="swatch background-greyscale-dark"></div>
-					<h4>Dark</h4>
-					<p class="text-x-small text-greyscale-medium">
-						<strong>HEX</strong>: #0F222F
-					</p>
-				</div>
-				<div class="columns-3">
-					<div class="swatch background-greyscale-medium"></div>
-					<h4>Medium</h4>
-					<p class="text-x-small text-greyscale-medium">
-						<strong>HEX</strong>: #445561
-					</p>
-				</div>
-				<div class="columns-3">
-					<div class="swatch background-greyscale-light"></div>
-					<h4>Light</h4>
-					<p class="text-x-small text-greyscale-medium">
-						<strong>HEX</strong>: #818F98
-					</p>
-				</div>
-				<div class="columns-3">
-					<div class="swatch border-all background-greyscale-x-light"></div>
-					<h4>X-Light</h4>
-					<p class="text-x-small text-greyscale-medium">
-						<strong>HEX</strong>: #F5F5F5
-					</p>
-				</div>
-		</section>
-		<!-- / Greyscale !-->
+				<!-- Colours !-->
+				<section id="colours" class="branding-section">
+					<h1>Colour Palette</h1>
 
-		<!-- UI !-->
-		<section class="branding-sub-section">
-			<h2>UI</h2>
-			<div class="row">
-				<div class="columns-3">
-					<div class="swatch background-ui-success"></div>
-					<h4>Success</h4>
-					<p class="text-x-small text-greyscale-medium">
-						<strong>HEX</strong>: #46A76D
-					</p>
-				</div>
-				<div class="columns-3">
-					<div class="swatch background-ui-error"></div>
-					<h4>Error</h4>
-					<p class="text-x-small text-greyscale-medium">
-						<strong>HEX</strong>: #BB4150
-					</p>
-				</div>
-				<div class="columns-3">
-					<div class="swatch background-ui-info"></div>
-					<h4>Info</h4>
-					<p class="text-x-small text-greyscale-medium">
-						<strong>HEX</strong>: #51A3B1
-					</p>
-				</div>
-			</div>
-		</section>
-		<!-- / UI !-->
+					<!-- Brand Colours !-->
+					<section id="brand-colours" class="branding-sub-section">
+						<h2>Brand Colours</h2>
+						<p>These are our primary brand colours. They're the foundation for any branded design.</p>
+						<div class="row">
+							<div class="columns-3">
+								<div class="swatch background-brand-primary"></div>
+								<h4>Red</h4>
+								<p class="text-x-small text-greyscale-medium">
+									<strong>HEX</strong>: #AC1B26
+								</p>
+								<p class="text-small color-greyscale-medium"></p>
+							</div>
+							<div class="columns-3">
+								<div class="swatch background-brand-secondary"></div>
+								<h4>Dark Blue</h4>
+								<p class="text-x-small text-greyscale-medium">
+									<strong>HEX</strong>: #0B2638
+								</p>
+							</div>
+						</div>
+					</section>
+					<!-- / Brand Colours !-->
 
-		<!-- Usage !-->
-		<section id="colour-palette-usage" class="branding-sub-section">
-			<h2>Color Usage</h2>
-			<div class="row no-gutter">
-				<div class="columns-2"><div style="height: 200px" class="padding-base text-white background-brand-primary text-small">Red – 15%</div></div>
-				<div class="columns-4"><div style="height: 200px" class="padding-base text-white background-brand-secondary text-small">Dark Blue – 35%</div></div>
-				<div class="columns-6"><div style="height: 200px" class="padding-base border-all text-small">White – 50%</div></div>
-			</div>
-		</section>
-		<!-- / Usage !-->
-	</section>
-	<!-- / Colours !-->
+					<!-- Greyscale !-->
+					<section id="greyscale" class="branding-sub-section">
+						<h2>Greyscale</h2>
+						<div class="row">
+							<div class="columns-3">
+								<div class="swatch background-greyscale-dark"></div>
+								<h4>Dark</h4>
+								<p class="text-x-small text-greyscale-medium">
+									<strong>HEX</strong>: #0F222F
+								</p>
+							</div>
+							<div class="columns-3">
+								<div class="swatch background-greyscale-medium"></div>
+								<h4>Medium</h4>
+								<p class="text-x-small text-greyscale-medium">
+									<strong>HEX</strong>: #445561
+								</p>
+							</div>
+							<div class="columns-3">
+								<div class="swatch background-greyscale-light"></div>
+								<h4>Light</h4>
+								<p class="text-x-small text-greyscale-medium">
+									<strong>HEX</strong>: #818F98
+								</p>
+							</div>
+							<div class="columns-3">
+								<div class="swatch border-all background-greyscale-x-light"></div>
+								<h4>X-Light</h4>
+								<p class="text-x-small text-greyscale-medium">
+									<strong>HEX</strong>: #F5F5F5
+								</p>
+							</div>
+					</section>
+					<!-- / Greyscale !-->
 
+					<!-- UI !-->
+					<section id="ui" class="branding-sub-section">
+						<h2>UI</h2>
+						<div class="row">
+							<div class="columns-3">
+								<div class="swatch background-ui-success"></div>
+								<h4>Success</h4>
+								<p class="text-x-small text-greyscale-medium">
+									<strong>HEX</strong>: #46A76D
+								</p>
+							</div>
+							<div class="columns-3">
+								<div class="swatch background-ui-error"></div>
+								<h4>Error</h4>
+								<p class="text-x-small text-greyscale-medium">
+									<strong>HEX</strong>: #BB4150
+								</p>
+							</div>
+							<div class="columns-3">
+								<div class="swatch background-ui-info"></div>
+								<h4>Info</h4>
+								<p class="text-x-small text-greyscale-medium">
+									<strong>HEX</strong>: #51A3B1
+								</p>
+							</div>
+						</div>
+					</section>
+					<!-- / UI !-->
 
-		<section class="branding-section">
-			<h1>Typography</h1>
-			<p>We use Futura PT and Helvetica Neue across all brand materials. Futura LT is used for all large headers (website masthead, posters, flyers etc), whilst Helvetica Neue is reserved for all other copy (body, quotes etc).</p>
+					<!-- Usage !-->
+					<section id="usage" class="branding-sub-section">
+						<h2>Color Usage</h2>
+						<div class="row no-gutter">
+							<div class="columns-2"><div style="height: 200px" class="padding-base text-white background-brand-primary text-small">Red – 15%</div></div>
+							<div class="columns-4"><div style="height: 200px" class="padding-base text-white background-brand-secondary text-small">Dark Blue – 35%</div></div>
+							<div class="columns-6"><div style="height: 200px" class="padding-base border-all text-small">White – 50%</div></div>
+						</div>
+					</section>
+					<!-- / Usage !-->
+				</section>
+				<!-- / Colours !-->
 
-			<!-- Primary Typeface !-->
-			<section class="branding-sub-section">
-				<div class="row">
-					<div class="columns-4 font-primary">
-						<h2 class="text-large">Futura LT</h2>
-					</div>
-					<div class="columns-8">
-						<ul class="grid-2-device-medium spacing-after-triple">
-							<li>
-								<h4 class="margin-bottom-base">Light (300)</h4>
-								<p class="font-primary text-weight-200">ABCDEFGHIJKLMNOPQRSTUVWXYZ</br>
+				<!-- Typography !-->
+				<section id="typography" class="branding-section">
+					<h1>Typography</h1>
+					<p>We use Futura PT across all brand materials for both headings and body text. </br> Headings are capitalised, with loose letter-spacing applied (approx. 100 points or 0.1em).</p>
+
+					<!-- Primary Typeface !-->
+					<section id="primary" class="branding-sub-section">
+						<div class="row">
+							<div class="columns-4">
+								<h4 class="margin-bottom-base">Regular (400)</h4>
+								<p class="font-primary">ABCDEFGHIJKLMNOPQRSTUVWXYZ</br>
 								abcdefghijklmnopqrstuvwxyz</br>
 								1234567890(,.;:?!$&*)</p>
-							</li>
-							<li>
-								<h4 class="margin-bottom-base">Book (400)</h4>
-								<p class="font-primary text-weight-400">ABCDEFGHIJKLMNOPQRSTUVWXYZ</br>
-								abcdefghijklmnopqrstuvwxyz</br>
-								1234567890(,.;:?!$&*)</p>
-							</li>
-							<li>
+							</div>
+							<div class="columns-4">
 								<h4 class="margin-bottom-base">Medium (500)</h4>
 								<p class="font-primary text-weight-500">ABCDEFGHIJKLMNOPQRSTUVWXYZ</br>
 								abcdefghijklmnopqrstuvwxyz</br>
 								1234567890(,.;:?!$&*)</p>
-							</li>
-							<li>
+							</div>
+							<div class="columns-4">
 								<h4 class="margin-bottom-base">Heavy (700)</h4>
 								<p class="font-primary text-weight-700">ABCDEFGHIJKLMNOPQRSTUVWXYZ</br>
 								abcdefghijklmnopqrstuvwxyz</br>
 								1234567890(,.;:?!$&*)</p>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</section>
-			<!-- / Primary Typeface !-->
+							</div>
+						</div>
+					</section>
+					<!-- / Primary Typeface !-->
 
-			<!-- Secondary Typeface !-->
-			<section class="branding-sub-section">
-				<div class="row">
-					<div class="columns-4">
-						<h2 class="text-large">Helvetica Neue</h2>
-					</div>
-					<div class="columns-8">
-						<ul class="grid-2-device-medium spacing-after-triple">
-							<li>
-								<h4 class="margin-bottom-base">Light (300)</h3>
-								<p class="text-weight-300">ABCDEFGHIJKLMNOPQRSTUVWXYZ</br>
-								abcdefghijklmnopqrstuvwxyz</br>
-								1234567890(,.;:?!$&*)</p>
-							</li>
-							<li>
-								<h4 class="margin-bottom-base">Regular (400)</h3>
-								<p class="text-weight-400">ABCDEFGHIJKLMNOPQRSTUVWXYZ</br>
-								abcdefghijklmnopqrstuvwxyz</br>
-								1234567890(,.;:?!$&*)</p>
-							</li>
-							<li>
-								<h4 class="margin-bottom-base">Semi Bold (600)</h3>
-								<p class="text-weight-600">ABCDEFGHIJKLMNOPQRSTUVWXYZ</br>
-								abcdefghijklmnopqrstuvwxyz</br>
-								1234567890(,.;:?!$&*)</p>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</section>
-			<!-- / Secondary Typeface !-->
+					<!-- Hierarchy !-->
+					<section id="hierarchy" class="branding-sub-section">
+						<h2>Hierarchy of Type</h2>
 
-			<!-- Hierarchy !-->
-			<section class="branding-sub-section">
-				<h2>Hierarchy of Type</h2>
-				<table class="bordered">
-					<tr>
-						<td><h1>Heading 1</h1></td>
-						<td>Futura PT, capitalised. 0.1em letter-spacing is applied.</td>
-					</tr>
-					<tr>
-						<td><h2>Heading 2</h2></td>
-						<td>Helvetica Neue</td>
-					</tr>
-					<tr>
-						<td><h3>Heading 3</h3></td>
-						<td>Helvetica Neue</td>
-					</tr>
-					<tr>
-						<td><h4>Heading 4</h4></td>
-						<td>Helvetica Neue</td>
-					</tr>
-					<tr>
-						<td><h5>Heading 5</h5></td>
-						<td>Helvetica Neue</td>
-					</tr>
-					<tr>
-						<td><p>Paragraph text.</p></td>
-						<td>Helvetica Neue</td>
-					</tr>
-				</table>
-			</section>
-		</section>
-		<section class="branding-section">
-			<h1>Photography</h1>
-			<p>Photography is used throughout the branded materials, usually as a backdrop over which the logo and supporting copy are overlayed.</p>
-
-			<p>We like to use glossy, high resolution imagery. This will mostly be ‘action shots’ of our students &or staff- at a desk pair programming, doing a standup in a group, taking part in a breakout session, using a Kanban board, sketching ideas on a whiteboard etc.
-			
-			<p>We mix this up with ‘lifestyle’ images that promote the things we think matter - health and fitness (eg shots of the bikes we encourage people to ride or students on a group-climb), mental well-being (shots of yoga and meditation), or ‘fun’ shots of students & staff chatting, eating, generally going about their lives, and always happy.</p>
-
-			<section class="branding-sub-section">
-				<h2>Overlay</h2>
-				<p>We like to cover our photos in an opaque tint. depending on which fits the medium and the context best. The mask should be dark enoguh to allow the text to stand out, without having to add any drop-shadow or another container.</p>
-				<p>To generate images like this, the following treatment is applied:</p>
-				<ol class="ordered-list">
-					<li>Image should first be converted to greyscale</li>
-					<li>The mask layer is then applied on top, using Dark Blue. The opacity is then set to around 60%</li>
-					<li>Depending on how the image looks, you may want to adjust the image contrast levels to ensure all the details come out.</li>
-				</ol>
-				<section class="branding-sub-section">
-					<img src="images/photos/blue.jpg">
+						<table class="table-hierarchy">
+							<tr>
+								<td>H1</td>
+								<td><h1>Heading 1</h1></td>
+							</tr>
+							<tr>
+								<td>H2</td>
+								<td><h2>Heading 2</h2></td>
+							</tr>
+							<tr>
+								<td>H3</td>
+								<td><h3>Heading 3</h3></td>
+							</tr>
+							<tr>
+								<td>H4</td>
+								<td><h4>Heading 4</h4></td>
+							</tr>
+							<tr>
+								<td>H5</td>
+								<td><h5>Heading 5</h5></td>
+							</tr>
+							<tr>
+								<td>Paragraph</td>
+								<td><p>Our graduates come from all walks of life, and leave as trained software craftspeople. We're highly selective; a place at Makers Academy will greatly improve your chances of success in the rapidly-moving world of software engineering.</p></td>
+							</tr>
+						</table>
+					</section>
 				</section>
+				<!-- / Typography !-->
 
-			</section>
+				<!-- Photography !-->
+				<section class="branding-section">
+					<h1>Photography</h1>
+					<p>Photography is used throughout the branded materials, usually as a backdrop over which the logo and supporting copy are overlayed.</p>
 
-	<section class="branding-section">
-		<h1>Marketing Assets & Examples</h1>
-		<p>Below are various marketing assets and examples of how these guidelines are applied in practice.</p>
-			<ol class="ordered-list">
-				<li><strong>Logo</strong>: always use a white logo on a coloured background.</li>
-				<li><strong>Header</strong>: headline text uses Futura PT, capitalised with letter-spacing set between 0.1 - 0.2em.</li>
-				<li><strong>Subheader</strong>: long-form text uses Helvetica Neue. Line-height should be set to 1.5 / 2, and opacity is set to ~ 85% for a clear visual hierarchy</li>
-				<li><strong>Background</strong>: use an image with a overlay as a background.</li>
-				<li><strong>Call To Action</strong>: use our Primary Red colours for for calls to action.</li>
-			</ol>
-			<div class="border-all padding-double text-center"><img style="width: 1000px" src="images/marketing/example.png"></div>
+					<p>We like to use glossy, high resolution imagery. This will mostly be ‘action shots’ of our students &or staff- at a desk pair programming, doing a standup in a group, taking part in a breakout session, using a Kanban board, sketching ideas on a whiteboard etc.
+					
+					<p>We mix this up with ‘lifestyle’ images that promote the things we think matter - health and fitness (eg shots of the bikes we encourage people to ride or students on a group-climb), mental well-being (shots of yoga and meditation), or ‘fun’ shots of students & staff chatting, eating, generally going about their lives, and always happy.</p>
 
-		<section class="branding-sub-section">
-			<h2>Website Masthead</h2>
-			<img class="margin-bottom-double" src="images/marketing/masthead.png">
-		</section>
-	
-		<section class="branding-sub-section">
-			<h2>Flyer</h2>
-			<div class="row">
-			<div class="columns-6">
-				<h3>Front</h3>
-				<img src="images/marketing/flyer.png">
+					<section class="branding-sub-section">
+						<h2>Background Photos</h2>
+						<p>Background photos have the following treatment applied to them</p>
+						<ol class="ordered-list">
+							<li>The image should first be converted to greyscale</li>
+							<li>A Dark Blue color overlay is then added on top, with opacity set to around 60%</li>
+							<li>Depending on how the image looks, you may want to adjust the contrast.</li>
+						</ol>
+						<img src="images/photos/blue.jpg" class="margin-bottom-base">
+						<img src="images/photos/desk.jpg" class="margin-bottom-base">
+						<img src="images/photos/woman.jpg">
+					</section>
+				</section>
+				<!-- / Photography !-->
+
+				<!-- Marketing Assets !-->
+				<section id="marketing-assets" class="branding-section">
+					<h1>Marketing Assets & Examples</h1>
+					<p>Below are various marketing assets and examples of how these guidelines are applied in practice.</p>
+					<ol class="ordered-list">
+						<li><strong>Logo</strong>: always use the white logo on a image or solid colour background.</li>
+						<li><strong>Heading</strong>: capitalised with letter-spacing set to 0.1em</li>
+						<li><strong>Subheading</strong>: line-height should be set to ~ 1.6. Opacity is set to 90% for a stronger visual hierarchy</li>
+						<li><strong>Background</strong>: image has been treated using the color overlay method</li>
+						<li><strong>Call To Action</strong>: Maker's Red is used for calls to action.</li>
+					</ol>
+					<div class="border-all padding-double text-center"><img style="width: 1000px" src="images/marketing/example.png"></div>
+
+					<!-- Masthead !-->
+					<section id="website-masthead" class="branding-sub-section">
+						<h2>Website Masthead</h2>
+						<img class="margin-bottom-double" src="images/marketing/masthead.png">
+					</section>
+					<!-- / Masthead !-->
+				
+					<!-- Flyer !-->
+					<section id="flyer" class="branding-sub-section">
+						<h2>Flyer</h2>
+						<div class="row">
+							<div class="columns-6">
+								<h3>Front</h3>
+								<img src="images/marketing/flyer.png">
+							</div>
+							<div class="columns-6">
+								<h3>Back</h3>
+								<img class="border-all" src="images/marketing/flyer-back.png">
+							</div>
+						</div>
+					</section>
+					<!-- / Flyer !-->
+
+					<!-- Banners !-->
+					<section id="banners" class="branding-sub-section">
+						<h2>Ad Banners</h2>
+						<div class="row">
+							<div class="columns-6">
+								<h3>Skyscraper</h3>
+								<img class="margin-bottom-double" style="width: 160px" src="images/marketing/skyscraper.png">
+							</div>
+							<div class="columns-6">
+								<h3>MPU</h3>
+								<img class="margin-bottom-double" style="width: 300px" src="images/marketing/mpu.png">
+							</div>
+						</div>
+					</section>
+					<!-- / Banners !-->
+				</section>
+				<!-- / Marketing Assets !-->
+
+				<!-- Brand Story !-->
+				<section id="brand-story" class="branding-section">
+					<h1>Brand Story</h2>
+					<p>We understand that Makers Academy is expensive - we’d call it ‘reassuringly expensive’. We know that for the vast majority of our students, the cost of the course is a significant part of their life savings, or may even have to be covered with a loan - which they’ll need a job to pay back.</p>
+
+					<p>The Makers Academy brand promise is this - if we offer you a place on the course, it’s because we genuinely believe that we can turn you into a professional developer over the next 3-6 months.</p>
+
+					<p>We’ve built a strong brand built on trust, derived from delivering on our promise - that Makers Academy is the best vocational route into the world of software development.</p>
+
+					<p>If we take your money, we’re betting our brand on you. If you do your bit, and work your socks off, we’ll do ours, and support you until you’re working as a developer.</p>
+
+					<!-- Differentiators !-->
+					<section id="differentiators" class="branding-sub-section">
+						<h2>Differentiators</h2>
+						<p>We’re not a school - we’re the best developer factory in the world. 
+
+						<p>Where our competitors focus on being the best ‘educational establishment’, we focus on being the best way to get a job as a junior developer. We charge our hiring partners, so our goals, and our customers goals, are aligned. We always use best practise. We never cut corners.</p>
+
+						<p>Makers Academy is more than just a ‘school’ - it’s a mindset. It’s a way of life. </p>
+					</section>
+					<!-- / Differentiators !-->
+
+					<!-- Tone !-->
+					<section id="tone" class="branding-sub-section">
+						<h2>Tone of Voice</h2>
+						<p>The Makers Academy brand is knowledgeable but not condescending, confident not arrogant, humble, friendly, direct and playful.</p>
+
+						<p>The Makers Academy brand tells it like it is. It uses simple language, but it’s quite partial to a cheeky turn-of-phrase. Makers Academy is honest and trustworthy, and if it says it’ll do something, you can bet your bottom dollar it’ll follow through.</p>
+
+						<p>The tech world is complicated enough - we’ll do our best to speak plainly and explain concepts in a way that anyone could understand. We won’t mince our words or use jargon to make ourselves sound clever. The tone of Makers Academy’s writing is light and conversational. We use contractions - “it is” would always be “it’s” when Makers Academy’s talking.</p>
+
+						<p class="margin-bottom-double">Our language always reflects a core part of the Makers Academy ethos, placing ‘fun’ at the heart of what we do.</p>
+
+						<div class="row">
+							<div class="columns-6">
+								<div class="border-all padding-double">
+									<h3 class="margin-bottom-double">Words We Like</h3>
+									<ul class="unordered-list">
+										<li>Coach</li>
+										<li>Pairing</li>
+										<li>Transparency</li>
+										<li>Agile</li>
+									</ul>
+								</div>
+							</div>
+							<div class="columns-6">
+							<div class="border-all padding-double">
+								<h3 class="margin-bottom-double text-ui-error">Words We Don't Like</h3>
+								<ul class="unordered-list text-ui-error">
+									<li>Teacher</li>
+									<li>Certificate</li>
+									<li>Waterfall</li>
+									<li>Hack</li>
+									<li>Grade</li>
+									<li>Manager</li>
+									<li>BDUF</li>
+									<li>Hierarchy</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+					<!-- / Tone !-->
+
+					<!-- Boilerplate !-->
+					<section id="boilerplate" class="branding-sub-section">
+						<h2>Boilerplate Text</h2>
+						<h3>50 words</h3>
+						<p>Makers Academy is a fully immersive, full-time computer programming bootcamp, design to turn people with no knowledge of web-development into job-ready junior developers in just 12 weeks. We’re Europe’s #1 Developer Bootcamp, running new classes of our offline course every 6 weeks, and our online Ronin course every 12 weeks.</p>
+
+						<h3>75 words</h3>
+						<p>Makers Academy is a fully immersive, 12 week computer programming bootcamp. It's like Oxbridge meets the Royal Marines, but for people who want to learn to code, and designed to turn people with no knowledge of web-development into job-ready junior developers in just 12 weeks. We’re Europe’s #1 Developer Bootcamp, running highly selective classes of our offline course every 6 weeks, and our online Ronin course every 12 weeks.</p> 
+
+						<h3>200 words</h3>
+						<p>Makers Academy is a fully immersive, 12 week computer programming bootcamp. It's like Oxbridge meets the Royal Marines, but for people who want to learn to code, and designed to turn people with no knowledge of web-development into job-ready junior developers in just 12 weeks. We’re Europe’s #1 Developer Bootcamp, running highly selective classes of our offline course every 6 weeks, and our online Ronin course every 12 weeks. We’re based in Aldgate East, a stone's throw away from London’s Silicon Roundabout.</p>
+
+						<p>We take students with little/no experience in programming and teach the fundamentals of web development, like Ruby, Rails, HTML5, CSS, Javascript, J-Query, SQL, Ajax and some of the softer skills like Object-Oriented Design, Test Driven Development and Agile Methodology.</p>
+
+						<p>We take a "learn by doing" approach, through self-directed, project-based work. Students are encouraged to work in pairs on coding challenges, with weekly tests, culminating in a final project. We actively support our graduates into work, helping set up job interviews with our network of hiring partners. Of the 400 students who have graduated so far, almost everybody who has finished our course with the intention of becoming a developer has achieved this within 3 months of graduating.</p>
+
+						<h3>250 words</h3>
+						<p>Makers Academy is a fully immersive, 12 week computer programming bootcamp. It's like Oxbridge meets the Royal Marines, but for people who want to learn to code, and designed to turn people with no knowledge of web-development into job-ready junior developers in just 12 weeks. We’re Europe’s #1 Developer Bootcamp, running highly selective classes of our offline course every 6 weeks, and our online Ronin course every 12 weeks. We’re based in Aldgate East, a stone's throw away from London’s Silicon Roundabout.</p>
+
+						<p>We take students with little/no experience in programming and teach the fundamentals of web development, with the aim of developing in our students the necessary skills to prepare them to secure a role as a junior developer upon graduation. We teach all the latest technologies, like Ruby on Rails, HTML5, CSS, Javascript, J-Query, SQL, Ajax and some of the softer skills like Object-Oriented Design, Test Driven Development, Agile Methodology, and version controlling with Git.</p>
+
+						<p>We take a "learn by doing" approach, which we do through self-directed, project-based work. Students are encouraged to work in pairs on practical coding challenges, with weekly tests, culminating in a final project which is presented to hiring partners on "Graduation Day". We actively support and mentor our graduates into work, helping set up job interviews with our partners. Of the 400 students who have graduated so far, almost everybody who has finished our course with the intention of becoming a developer has achieved this within 3 months of graduating.</p>
+					</section>
+					<!-- / Boilerplate !-->
+				</section>
+				<!-- / Brand Story !-->
 			</div>
-			<div class="columns-6">
-				<h3>Back</h3>
-				<img class="border-all" src="images/marketing/flyer-back.png">
-			</div>
-			</div>
-		</section>
-
-		<section class="branding-sub-section">
-			<h2>Ad Banners</h2>
-			<div class="row">
-			<div class="columns-6">
-				<h3>Skyscraper</h3>
-				<img class="margin-bottom-double" style="width: 160px" src="images/marketing/skyscraper.png">
-			</div>
-			<div class="columns-6">
-				<h3>MPU</h3>
-				<img class="margin-bottom-double" style="width: 300px" src="images/marketing/mpu.png">
-			</div>
-			</div>
-		</section>
-	</section>
-
-	<section class="branding-section">
-		<h1>Brand Story</h2>
-		<p>We understand that Makers Academy is expensive - we’d call it ‘reassuringly expensive’. We know that for the vast majority of our students, the cost of the course is a significant part of their life savings, or may even have to be covered with a loan - which they’ll need a job to pay back.</p>
-
-		<p>The Makers Academy brand promise is this - if we offer you a place on the course, it’s because we genuinely believe that we can turn you into a professional developer over the next 3-6 months.</p>
-
-		<p>We’ve built a strong brand built on trust, derived from delivering on our promise - that Makers Academy is the best vocational route into the world of software development.</p>
-
-		<p>If we take your money, we’re betting our brand on you. If you do your bit, and work your socks off, we’ll do ours, and support you until you’re working as a developer.</p>
-
-		<section class="branding-sub-section">
-			<h2>Differentiators</h2>
-			<p>We’re not a school - we’re the best developer factory in the world. 
-
-			<p>Where our competitors focus on being the best ‘educational establishment’, we focus on being the best way to get a job as a junior developer. We charge our hiring partners, so our goals, and our customers goals, are aligned. We always use best practise. We never cut corners.</p>
-
-			<p>Makers Academy is more than just a ‘school’ - it’s a mindset. It’s a way of life. </p>
-		</section>
-
-		<section class="branding-sub-section">
-			<h2>Tone of Voice</h2>
-			<p>The Makers Academy brand is knowledgeable but not condescending, confident not arrogant, humble, friendly, direct and playful.</p>
-
-			<p>The Makers Academy brand tells it like it is. It uses simple language, but it’s quite partial to a cheeky turn-of-phrase. Makers Academy is honest and trustworthy, and if it says it’ll do something, you can bet your bottom dollar it’ll follow through.</p>
-
-			<p>The tech world is complicated enough - we’ll do our best to speak plainly and explain concepts in a way that anyone could understand. We won’t mince our words or use jargon to make ourselves sound clever. The tone of Makers Academy’s writing is light and conversational. We use contractions - “it is” would always be “it’s” when Makers Academy’s talking.</p>
-
-			<p class="margin-bottom-double">Our language always reflects a core part of the Makers Academy ethos, placing ‘fun’ at the heart of what we do.</p>
-
-			<div class="row">
-				<div class="columns-6">
-					<div class="border-all padding-double">
-						<h3 class="margin-bottom-double">Words We Like</h3>
-						<ul class="unordered-list">
-							<li>Coach</li>
-							<li>Pairing</li>
-							<li>Transparency</li>
-							<li>Agile</li>
-						</ul>
-					</div>
-				</div>
-				<div class="columns-6">
-				<div class="border-all padding-double">
-					<h3 class="margin-bottom-double text-ui-error">Words We Don't Like</h3>
-					<ul class="unordered-list text-ui-error">
-						<li>Coach</li>
-						<li>Pairing</li>
-						<li>Transparency</li>
-						<li>Agile</li>
-					</ul>
-				</div>
-			</div>
-
-
-
-
-		</section>
-
-		<section class="branding-sub-section">
-			<h2>Boilerplate Text</h2>
-			<h3>50 words</h3>
-			<p>Makers Academy is a fully immersive, full-time computer programming bootcamp, design to turn people with no knowledge of web-development into job-ready junior developers in just 12 weeks. We’re Europe’s #1 Developer Bootcamp, running new classes of our offline course every 6 weeks, and our online Ronin course every 12 weeks.</p>
-
-			<h3>75 words</h3>
-			<p>Makers Academy is a fully immersive, 12 week computer programming bootcamp. It's like Oxbridge meets the Royal Marines, but for people who want to learn to code, and designed to turn people with no knowledge of web-development into job-ready junior developers in just 12 weeks. We’re Europe’s #1 Developer Bootcamp, running highly selective classes of our offline course every 6 weeks, and our online Ronin course every 12 weeks.</p> 
-
-			<h3>200 words</h3>
-			<p>Makers Academy is a fully immersive, 12 week computer programming bootcamp. It's like Oxbridge meets the Royal Marines, but for people who want to learn to code, and designed to turn people with no knowledge of web-development into job-ready junior developers in just 12 weeks. We’re Europe’s #1 Developer Bootcamp, running highly selective classes of our offline course every 6 weeks, and our online Ronin course every 12 weeks. We’re based in Aldgate East, a stone's throw away from London’s Silicon Roundabout.</p>
-
-			<p>We take students with little/no experience in programming and teach the fundamentals of web development, like Ruby, Rails, HTML5, CSS, Javascript, J-Query, SQL, Ajax and some of the softer skills like Object-Oriented Design, Test Driven Development and Agile Methodology.</p>
-
-			<p>We take a "learn by doing" approach, through self-directed, project-based work. Students are encouraged to work in pairs on coding challenges, with weekly tests, culminating in a final project. We actively support our graduates into work, helping set up job interviews with our network of hiring partners. Of the 400 students who have graduated so far, almost everybody who has finished our course with the intention of becoming a developer has achieved this within 3 months of graduating.</p>
-
-			<h3>250 words</h3>
-			<p>Makers Academy is a fully immersive, 12 week computer programming bootcamp. It's like Oxbridge meets the Royal Marines, but for people who want to learn to code, and designed to turn people with no knowledge of web-development into job-ready junior developers in just 12 weeks. We’re Europe’s #1 Developer Bootcamp, running highly selective classes of our offline course every 6 weeks, and our online Ronin course every 12 weeks. We’re based in Aldgate East, a stone's throw away from London’s Silicon Roundabout.</p>
-
-			<p>We take students with little/no experience in programming and teach the fundamentals of web development, with the aim of developing in our students the necessary skills to prepare them to secure a role as a junior developer upon graduation. We teach all the latest technologies, like Ruby on Rails, HTML5, CSS, Javascript, J-Query, SQL, Ajax and some of the softer skills like Object-Oriented Design, Test Driven Development, Agile Methodology, and version controlling with Git.</p>
-
-			<p>We take a "learn by doing" approach, which we do through self-directed, project-based work. Students are encouraged to work in pairs on practical coding challenges, with weekly tests, culminating in a final project which is presented to hiring partners on "Graduation Day". We actively support and mentor our graduates into work, helping set up job interviews with our partners. Of the 400 students who have graduated so far, almost everybody who has finished our course with the intention of becoming a developer has achieved this within 3 months of graduating.</p>
-		</section>
-	</section>
-	</div>
+		</div>
 	</body>
 </html>
 	

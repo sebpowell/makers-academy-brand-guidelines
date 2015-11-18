@@ -361,11 +361,11 @@
 
 .text-underline { text-decoration: underline; }
 
-.text-uppercase { text-transform: uppercase !important; letter-spacing: 1px; }
+.text-uppercase { text-transform: uppercase !important; letter-spacing: 0.1em; }
 
-.text-lowercase { text-transform: lowercase !important; }
+.text-lowercase { text-transform: lowercase !important; letter-spacing: 0 !important; }
 
-.text-capitalize { text-transform: capitalize !important; }
+.text-capitalize { text-transform: capitalize !important; letter-spacing: 0 !important; }
 
 .is-hidden { display: none !important; visibility: hidden !important; }
 
@@ -1378,51 +1378,51 @@ button.white.bordered:hover, .button.white.bordered:hover { border: 1px solid wh
 
 .columns-1 { width: 100%; float: left; margin-bottom: 32px; }
 .columns-1:last-child { margin-bottom: 0; }
-@media (min-width: 480px) { .columns-1 { padding: 0 16px; margin-bottom: 0; width: 8.33333%; } }
+@media (min-width: 900px) { .columns-1 { padding: 0 16px; margin-bottom: 0; width: 8.33333%; } }
 
 .columns-2 { width: 100%; float: left; margin-bottom: 32px; }
 .columns-2:last-child { margin-bottom: 0; }
-@media (min-width: 480px) { .columns-2 { padding: 0 16px; margin-bottom: 0; width: 16.66667%; } }
+@media (min-width: 900px) { .columns-2 { padding: 0 16px; margin-bottom: 0; width: 16.66667%; } }
 
 .columns-3 { width: 100%; float: left; margin-bottom: 32px; }
 .columns-3:last-child { margin-bottom: 0; }
-@media (min-width: 480px) { .columns-3 { padding: 0 16px; margin-bottom: 0; width: 25%; } }
+@media (min-width: 900px) { .columns-3 { padding: 0 16px; margin-bottom: 0; width: 25%; } }
 
 .columns-4 { width: 100%; float: left; margin-bottom: 32px; }
 .columns-4:last-child { margin-bottom: 0; }
-@media (min-width: 480px) { .columns-4 { padding: 0 16px; margin-bottom: 0; width: 33.33333%; } }
+@media (min-width: 900px) { .columns-4 { padding: 0 16px; margin-bottom: 0; width: 33.33333%; } }
 
 .columns-5 { width: 100%; float: left; margin-bottom: 32px; }
 .columns-5:last-child { margin-bottom: 0; }
-@media (min-width: 480px) { .columns-5 { padding: 0 16px; margin-bottom: 0; width: 41.66667%; } }
+@media (min-width: 900px) { .columns-5 { padding: 0 16px; margin-bottom: 0; width: 41.66667%; } }
 
 .columns-6 { width: 100%; float: left; margin-bottom: 32px; }
 .columns-6:last-child { margin-bottom: 0; }
-@media (min-width: 480px) { .columns-6 { padding: 0 16px; margin-bottom: 0; width: 50%; } }
+@media (min-width: 900px) { .columns-6 { padding: 0 16px; margin-bottom: 0; width: 50%; } }
 
 .columns-7 { width: 100%; float: left; margin-bottom: 32px; }
 .columns-7:last-child { margin-bottom: 0; }
-@media (min-width: 480px) { .columns-7 { padding: 0 16px; margin-bottom: 0; width: 58.33333%; } }
+@media (min-width: 900px) { .columns-7 { padding: 0 16px; margin-bottom: 0; width: 58.33333%; } }
 
 .columns-8 { width: 100%; float: left; margin-bottom: 32px; }
 .columns-8:last-child { margin-bottom: 0; }
-@media (min-width: 480px) { .columns-8 { padding: 0 16px; margin-bottom: 0; width: 66.66667%; } }
+@media (min-width: 900px) { .columns-8 { padding: 0 16px; margin-bottom: 0; width: 66.66667%; } }
 
 .columns-9 { width: 100%; float: left; margin-bottom: 32px; }
 .columns-9:last-child { margin-bottom: 0; }
-@media (min-width: 480px) { .columns-9 { padding: 0 16px; margin-bottom: 0; width: 75%; } }
+@media (min-width: 900px) { .columns-9 { padding: 0 16px; margin-bottom: 0; width: 75%; } }
 
 .columns-10 { width: 100%; float: left; margin-bottom: 32px; }
 .columns-10:last-child { margin-bottom: 0; }
-@media (min-width: 480px) { .columns-10 { padding: 0 16px; margin-bottom: 0; width: 83.33333%; } }
+@media (min-width: 900px) { .columns-10 { padding: 0 16px; margin-bottom: 0; width: 83.33333%; } }
 
 .columns-11 { width: 100%; float: left; margin-bottom: 32px; }
 .columns-11:last-child { margin-bottom: 0; }
-@media (min-width: 480px) { .columns-11 { padding: 0 16px; margin-bottom: 0; width: 91.66667%; } }
+@media (min-width: 900px) { .columns-11 { padding: 0 16px; margin-bottom: 0; width: 91.66667%; } }
 
 .columns-12 { width: 100%; float: left; margin-bottom: 32px; }
 .columns-12:last-child { margin-bottom: 0; }
-@media (min-width: 480px) { .columns-12 { padding: 0 16px; margin-bottom: 0; width: 100%; } }
+@media (min-width: 900px) { .columns-12 { padding: 0 16px; margin-bottom: 0; width: 100%; } }
 
 @media (min-width: 900px) { .offset-1 { margin-left: 8.33333%; } }
 
@@ -1532,7 +1532,7 @@ button.white.bordered:hover, .button.white.bordered:hover { border: 1px solid wh
 
 html, body, div, span, object, iframe, hr, h1, h2, h3, h4, h5, h6, p, blockquote, pre, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, input, button, textarea, select, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section { margin: 0; padding: 0; border: 0; outline: 0; vertical-align: baseline; }
 
-html { font-family: "Helvetica Neue"; line-height: 1; color: #0F222F; background-color: white; min-height: 100%; height: 100%; }
+html { font-family: "futura-pt"; line-height: 1; color: #0F222F; background-color: white; min-height: 100%; height: 100%; }
 
 img { max-width: 100%; }
 
@@ -1553,18 +1553,17 @@ a { color: #AC1B26; cursor: pointer; text-decoration: none; }
 a:hover { color: #AC1B26; }
 a.link-reset { color: inherit; }
 
-p { font-size: 16px; line-height: 1.8; }
-@media (min-width: 1080px) { p { max-width: 800px; } }
+p { font-size: 18px; line-height: 1.8; max-width: 650px; }
 p:not(:last-child) { margin-bottom: 24px; }
 
 strong { font-weight: 600; }
 
-.unordered-list, .ordered-list { padding-left: 16px; }
-.unordered-list li, .ordered-list li { margin-bottom: 24px; }
+.unordered-list, .ordered-list { padding-left: 18px; max-width: 650px; }
+.unordered-list li, .ordered-list li { line-height: 1.6; font-size: 18px; margin-bottom: 24px; }
 
 .ordered-list { padding-left: 24px; }
 
-.docs-navigation { position: fixed; left: 0; border-right: 1px solid #E8E8E8; top: 0; width: 100%; z-index: 9999; background: white; box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); border-bottom: 1px solid #E8E8E8; }
+.docs-navigation { position: fixed; left: 0; border-right: 1px solid #E8E8E8; top: 0; width: 100%; z-index: 9999; background: white; }
 @media (min-width: 780px) { .docs-navigation { display: block; width: 200px; height: 100vh; } }
 .docs-navigation > ul { list-style-type: none; margin: 0; padding: 0; position: fixed; transition: all .5s; width: 300px; left: -300px; height: 100%; background: white; overflow-y: scroll; border-right: 1px solid #E8E8E8; }
 .docs-navigation > ul li { margin: 0; line-height: inherit; }
@@ -1579,6 +1578,17 @@ strong { font-weight: 600; }
 .docs-navigation > ul > li > ul > li > a { font-size: 14px; color: #818F98; display: block; padding: 24px 16px; }
 .docs-navigation > ul > li > ul > li > a:hover { background: #f5f5f5; color: #0F222F; }
 
+table { width: 100%; }
+
+.docs-download { zoom: 1; border-bottom: 1px solid #E8E8E8; width: 100%; padding: 32px 0; }
+.docs-download:before, .docs-download:after { content: ""; display: table; }
+.docs-download:after { clear: both; }
+
+.docs-download-button { border: 1px solid #AC1B26; border-radius: 40px; padding: 14px 20px; float: right; top: 32px; right: 32px; }
+
+.table-hierarchy td { padding: 32px 0; border-bottom: 1px solid #E8E8E8; }
+.table-hierarchy td h1, .table-hierarchy td h2, .table-hierarchy td h3, .table-hierarchy td h4, .table-hierarchy td h5, .table-hierarchy td h6, .table-hierarchy td p { margin-bottom: 0; }
+
 .branding-section { padding: 60px 0; }
 .branding-section .branding-section-sub-heading { margin-top: 60px; }
 .branding-section .branding-sub-section { padding: 32px 0; }
@@ -1591,7 +1601,7 @@ strong { font-weight: 600; }
 
 .docs-content { width: 100%; max-width: 1100px; margin: auto; padding: 0 24px; }
 
-h1 { font-family: "futura-pt"; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 400; }
+h1, h2, h3, h4, h5, h6 { font-family: "futura-pt"; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 400; color: #AC1B26; }
 
 .swatch { width: 100%; height: 80px; margin-bottom: 16px; border-radius: 3px; padding: 48px; color: white; }
 

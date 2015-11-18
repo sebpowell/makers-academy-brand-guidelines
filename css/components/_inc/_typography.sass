@@ -41,10 +41,10 @@ a
 		color: inherit
 	
 p
-	+responsive-text-size(base)
+	font-size: 18px
 	line-height: 1.8
-	+respond-above(device-large)
-		max-width: 800px
+	max-width: 650px
+		
 
 	&:not(:last-child)
 		margin-bottom: sizes(double-half)
@@ -53,9 +53,13 @@ strong
 	font-weight: 600
 
 .unordered-list, .ordered-list
-	padding-left: sizes(base)
+	padding-left: 18px
+	max-width: 650px
 	li
+		line-height: 1.6
+		font-size: 18px
 		margin-bottom: sizes(double-half)
+
 
 .ordered-list
 	padding-left: sizes(double-half)
